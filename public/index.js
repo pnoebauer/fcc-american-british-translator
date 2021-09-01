@@ -23,7 +23,41 @@ const translateHandler = async () => {
 		return;
 	}
 
+	// let htmlString = parsed.translation;
+
+	// const translationArr = parsed.translation.split(' ');
+	// // console.log(translationArr);
+	// const textArr = parsed.text.split(' ');
+
+	// translationArr.forEach(word => {
+	// 	// console.log(parsed.text, !textArr.includes(word), word);
+	// 	if (!textArr.includes(word)) {
+	// 		console.log(word, htmlString);
+	// 		// htmlString = htmlString.replace(
+	// 		// 	new RegExp(`\\b${word}\\b`),
+	// 		// 	`<span class="highlight">${word}</span>`
+	// 		// );
+
+	// 		// str.match(/\bcosts(?!<\/span>)/g) )
+
+	// 		htmlString = htmlString.replace(
+	// 			new RegExp(`\\b${word}(?!<\/span>)`),
+	// 			`<span class="highlight">${word}</span>`
+	// 		);
+	// 	}
+	// });
+
+	// // console.log(htmlString);
+
+	// if (parsed.translation === 'Everything looks good to me!') {
+	// 	translatedArea.innerHTML = parsed.translation;
+	// 	return;
+	// }
+
+	// translatedArea.innerHTML = htmlString;
+
 	translatedArea.innerHTML = parsed.translation;
+
 	return;
 };
 
